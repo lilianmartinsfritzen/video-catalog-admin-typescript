@@ -1,5 +1,5 @@
 import { v4 as uuidv4, validate as uuidValidate } from "uuid";
-import { ValueObject } from "../domain/value-object";
+import { ValueObject } from "../value-object";
 
 export class Uuid extends ValueObject {
   readonly id: string;
