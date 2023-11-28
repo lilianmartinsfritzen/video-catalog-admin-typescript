@@ -35,6 +35,7 @@ export abstract class InMemoryRepository<
     if (indexFound === -1) {
       throw new NotFoundError(entity_id, this.getEntity());
     }
+    this.items.splice(indexFound, 1);
   }
 
   async findById(entity_id: EntityId): Promise<E> {
